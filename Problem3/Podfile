@@ -1,0 +1,8 @@
+target 'Problem3' do
+	pod 'Hpple'
+end
+
+target 'Problem3Tests' do
+	pod 'Kiwi', '~> 2.3'
+end
+
