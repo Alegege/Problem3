@@ -1,5 +1,7 @@
 target 'Problem3' do
 	pod 'Hpple'
+	pod 'MBProgressHUD'
+	pod 'ReactiveCocoa', '~> 2.4'
 end
 
 target 'Problem3Tests' do

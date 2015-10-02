@@ -15,9 +15,21 @@
 		3F03CE931BBD440900278776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F03CE911BBD440900278776 /* LaunchScreen.storyboard */; };
 		3F03CE9E1BBD440900278776 /* Problem3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03CE9D1BBD440900278776 /* Problem3Tests.m */; };
 		3F03CEA91BBD440A00278776 /* Problem3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03CEA81BBD440A00278776 /* Problem3UITests.m */; };
-		3F95104A1BBD68C60046B845 /* AGGWebsiteSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510491BBD68C60046B845 /* AGGWebsiteSelectorViewController.m */; settings = {ASSET_TAGS = (); }; };
-		3F95104B1BBD68C60046B845 /* AGGWebsiteSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510491BBD68C60046B845 /* AGGWebsiteSelectorViewController.m */; settings = {ASSET_TAGS = (); }; };
-		3F95104C1BBD68C60046B845 /* AGGWebsiteSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510491BBD68C60046B845 /* AGGWebsiteSelectorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F95104F1BBD6BFD0046B845 /* UIColor+VEColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95104E1BBD6BFD0046B845 /* UIColor+VEColor.m */; settings = {ASSET_TAGS = (); }; };
+		3F9510501BBD6BFD0046B845 /* UIColor+VEColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95104E1BBD6BFD0046B845 /* UIColor+VEColor.m */; settings = {ASSET_TAGS = (); }; };
+		3F9510511BBD6BFD0046B845 /* UIColor+VEColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95104E1BBD6BFD0046B845 /* UIColor+VEColor.m */; settings = {ASSET_TAGS = (); }; };
+		3F95105B1BBD761B0046B845 /* VEWebsiteSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510591BBD761B0046B845 /* VEWebsiteSelectorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F95105C1BBD761B0046B845 /* VEWebsiteSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510591BBD761B0046B845 /* VEWebsiteSelectorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F95105D1BBD761B0046B845 /* VEWebsiteSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510591BBD761B0046B845 /* VEWebsiteSelectorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F95105E1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F95105A1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		3F95105F1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F95105A1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		3F9510601BBD761B0046B845 /* VEWebsiteSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F95105A1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		3F9510641BBD7D460046B845 /* VEHtmlElementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510631BBD7D460046B845 /* VEHtmlElementListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F9510651BBD7D460046B845 /* VEHtmlElementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510631BBD7D460046B845 /* VEHtmlElementListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F9510661BBD7D460046B845 /* VEHtmlElementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510631BBD7D460046B845 /* VEHtmlElementListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F9510691BBD80D70046B845 /* VEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510681BBD80D70046B845 /* VEViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F95106A1BBD80D70046B845 /* VEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510681BBD80D70046B845 /* VEViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3F95106B1BBD80D70046B845 /* VEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9510681BBD80D70046B845 /* VEViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EDCAF5C2B7B27615A9CF0272 /* libPods-Problem3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BD765AC1A9BE4657C8A172 /* libPods-Problem3Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +66,16 @@
 		3F03CEA41BBD440900278776 /* Problem3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Problem3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F03CEA81BBD440A00278776 /* Problem3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Problem3UITests.m; sourceTree = "<group>"; };
 		3F03CEAA1BBD440A00278776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F9510481BBD68C60046B845 /* AGGWebsiteSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGWebsiteSelectorViewController.h; sourceTree = "<group>"; };
-		3F9510491BBD68C60046B845 /* AGGWebsiteSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGGWebsiteSelectorViewController.m; sourceTree = "<group>"; };
+		3F95104D1BBD6BFD0046B845 /* UIColor+VEColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VEColor.h"; sourceTree = "<group>"; };
+		3F95104E1BBD6BFD0046B845 /* UIColor+VEColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VEColor.m"; sourceTree = "<group>"; };
+		3F9510521BBD6D080046B845 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3F9510581BBD761B0046B845 /* VEWebsiteSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEWebsiteSelectorViewController.h; sourceTree = "<group>"; };
+		3F9510591BBD761B0046B845 /* VEWebsiteSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEWebsiteSelectorViewController.m; sourceTree = "<group>"; };
+		3F95105A1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VEWebsiteSelectorViewController.xib; sourceTree = "<group>"; };
+		3F9510621BBD7D460046B845 /* VEHtmlElementListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEHtmlElementListViewController.h; sourceTree = "<group>"; };
+		3F9510631BBD7D460046B845 /* VEHtmlElementListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEHtmlElementListViewController.m; sourceTree = "<group>"; };
+		3F9510671BBD80D70046B845 /* VEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEViewController.h; sourceTree = "<group>"; };
+		3F9510681BBD80D70046B845 /* VEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEViewController.m; sourceTree = "<group>"; };
 		5E2814D1E68F70B8962E530E /* Pods-Problem3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Problem3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Problem3Tests/Pods-Problem3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		79BD765AC1A9BE4657C8A172 /* libPods-Problem3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Problem3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8291D9E27B44DC12AFAE263D /* Pods-Problem3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Problem3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Problem3Tests/Pods-Problem3Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3F03CE841BBD440900278776 /* main.m */,
+				3F9510521BBD6D080046B845 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,9 +180,30 @@
 			path = Problem3UITests;
 			sourceTree = "<group>";
 		};
+		3F9510531BBD71C90046B845 /* Website Selector */ = {
+			isa = PBXGroup;
+			children = (
+				3F9510581BBD761B0046B845 /* VEWebsiteSelectorViewController.h */,
+				3F9510591BBD761B0046B845 /* VEWebsiteSelectorViewController.m */,
+				3F95105A1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib */,
+			);
+			name = "Website Selector";
+			sourceTree = "<group>";
+		};
+		3F9510611BBD7AD00046B845 /* HTML Elements list */ = {
+			isa = PBXGroup;
+			children = (
+				3F9510621BBD7D460046B845 /* VEHtmlElementListViewController.h */,
+				3F9510631BBD7D460046B845 /* VEHtmlElementListViewController.m */,
+			);
+			name = "HTML Elements list";
+			sourceTree = "<group>";
+		};
 		3FEE7A9D1BBD50DD00C6C87B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				3F95104D1BBD6BFD0046B845 /* UIColor+VEColor.h */,
+				3F95104E1BBD6BFD0046B845 /* UIColor+VEColor.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -190,8 +232,10 @@
 		3FEE7AA11BBD511A00C6C87B /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F9510481BBD68C60046B845 /* AGGWebsiteSelectorViewController.h */,
-				3F9510491BBD68C60046B845 /* AGGWebsiteSelectorViewController.m */,
+				3F9510611BBD7AD00046B845 /* HTML Elements list */,
+				3F9510531BBD71C90046B845 /* Website Selector */,
+				3F9510671BBD80D70046B845 /* VEViewController.h */,
+				3F9510681BBD80D70046B845 /* VEViewController.m */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -324,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F03CE931BBD440900278776 /* LaunchScreen.storyboard in Resources */,
+				3F95105E1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib in Resources */,
 				3F03CE901BBD440900278776 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F95105F1BBD761B0046B845 /* VEWebsiteSelectorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9510601BBD761B0046B845 /* VEWebsiteSelectorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,9 +459,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F95104F1BBD6BFD0046B845 /* UIColor+VEColor.m in Sources */,
+				3F9510691BBD80D70046B845 /* VEViewController.m in Sources */,
+				3F9510641BBD7D460046B845 /* VEHtmlElementListViewController.m in Sources */,
 				3F03CE8B1BBD440900278776 /* ViewController.m in Sources */,
 				3F03CE881BBD440900278776 /* AppDelegate.m in Sources */,
-				3F95104A1BBD68C60046B845 /* AGGWebsiteSelectorViewController.m in Sources */,
+				3F95105B1BBD761B0046B845 /* VEWebsiteSelectorViewController.m in Sources */,
 				3F03CE851BBD440900278776 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,8 +473,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F95104B1BBD68C60046B845 /* AGGWebsiteSelectorViewController.m in Sources */,
 				3F03CE9E1BBD440900278776 /* Problem3Tests.m in Sources */,
+				3F95105C1BBD761B0046B845 /* VEWebsiteSelectorViewController.m in Sources */,
+				3F95106A1BBD80D70046B845 /* VEViewController.m in Sources */,
+				3F9510501BBD6BFD0046B845 /* UIColor+VEColor.m in Sources */,
+				3F9510651BBD7D460046B845 /* VEHtmlElementListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +485,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F95104C1BBD68C60046B845 /* AGGWebsiteSelectorViewController.m in Sources */,
 				3F03CEA91BBD440A00278776 /* Problem3UITests.m in Sources */,
+				3F95105D1BBD761B0046B845 /* VEWebsiteSelectorViewController.m in Sources */,
+				3F95106B1BBD80D70046B845 /* VEViewController.m in Sources */,
+				3F9510511BBD6BFD0046B845 /* UIColor+VEColor.m in Sources */,
+				3F9510661BBD7D460046B845 /* VEHtmlElementListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +607,8 @@
 			baseConfigurationReference = DA5B29F28BF1359E51D40D32 /* Pods-Problem3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Problem3/PrefixHeader.pch;
 				INFOPLIST_FILE = Problem3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.agg.Problem3;
@@ -564,6 +622,8 @@
 			baseConfigurationReference = 9BA1F367952AAE63C768E8D2 /* Pods-Problem3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Problem3/PrefixHeader.pch;
 				INFOPLIST_FILE = Problem3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.agg.Problem3;

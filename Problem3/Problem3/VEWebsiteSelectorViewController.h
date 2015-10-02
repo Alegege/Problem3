@@ -1,5 +1,5 @@
 //
-//  P3WebsiteSelectorViewController.h
+//  VEWebsiteSelectorViewController.h
 //  Problem3
 //
 //  Created by Alejandro Garcia on 1/10/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGGWebsiteSelectorViewController : UIViewController
+@interface VEWebsiteSelectorViewController : VEViewController
 
 @end
