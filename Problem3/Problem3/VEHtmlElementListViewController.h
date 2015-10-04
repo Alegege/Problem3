@@ -2,18 +2,21 @@
 //  VEHtmlElementListViewController.h
 //  Problem3
 //
-//  Created by Alejandro Garcia on 1/10/15.
+//  Created by Alejandro Garcia on 3/10/15.
 //  Copyright © 2015 Alejandro Garcia. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "VEHtmlElement.h"
 
-typedef NS_ENUM(NSInteger, VEHtmlElementType) {
-    HtmlElementTypeA,
-};
-
+/**
+ * Displays a list of a[href] html elements
+ */
 @interface VEHtmlElementListViewController : VEViewController
 
+/**
+ * Designated initializer
+ */
 - (id)initWithURL:(NSURL *)url htmlElementType:(VEHtmlElementType)htmlElementType;
 
 @end

@@ -1,0 +1,633 @@
+
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="es"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="es"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="es"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="es"><!--<![endif]-->
+    <head>
+        
+        <title>Visual Engineering - Software Development</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Remove if you"re not building a responsive site. (But then why would you do such a thing?) -->
+        <meta content="index,follow" name="robots" />
+        
+        <link rel="pingback" href="http://www.visual-engin.com/Web/xmlrpc.php" />
+        <link rel="shortcut icon" href="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/favicon.ico"/>
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"/>
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
+        <script src="http://www.visual-engin.com/wp-content/themes/starkers-master/js/site.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <style>
+            
+            /* Carousel base class */
+            .carousel {
+                margin-bottom: 40px;
+            }
+        
+        .carousel .contenido {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .carousel .contenido.kol {
+            position: absolute;
+            right: 0;
+            bottom: 100px;
+            left: 0;
+        }
+        
+        .carousel .item {
+            height: 430px;
+        }
+        .carousel img {
+            /*min-width: 100%;*/
+            height: 430px;
+        }
+        
+        .carousel-caption {
+            background-color: transparent;
+            position: static;
+            max-width: 610px;
+            padding: 0 20px;
+            margin-bottom: 74px;
+        }
+        .carousel-caption h1,
+        .carousel-caption .lead {
+            margin: 0;
+            line-height: 1.25;
+            color: #fff;
+            /*  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.59);*/
+            
+        }
+        .carousel-caption .btn {
+            margin-top: 10px;
+        }
+        
+        
+        /* RESPONSIVE CSS
+         -------------------------------------------------- */
+        
+        @media (max-width: 979px) {
+            
+            .container.navbar-wrapper {
+                margin-bottom: 0;
+                width: auto;
+            }
+            .navbar-inner {
+                border-radius: 0;
+                
+            }
+            
+            .carousel .item {
+                height: 400px;
+            }
+            .carousel img {
+                width: auto;
+                height: 400px;
+            }
+            
+            
+        }
+        
+        
+        @media (max-width: 767px) {
+            
+            
+            
+            .carousel {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .carousel .container {
+                
+            }
+            .carousel .item {
+                height: 400px;
+            }
+            .carousel img {
+                height: 400px;
+            }
+            .carousel-caption {
+                width: 50%;
+                padding: 0 70px;
+                margin-bottom: 40px;
+            }
+            .carousel-caption h1 {
+                font-size: 20px;
+            }
+            .carousel-caption .lead,
+            .carousel-caption .btn {
+                font-size: 18px;
+            }
+            
+            .marketing .span4 + .span4 {
+                margin-top: 40px;
+            }
+            
+            
+            
+        }
+        </style>
+        
+        
+        
+        
+        <style type="text/css">
+            #fancybox-close{right:-15px;top:-15px}
+            div#fancybox-content{border-color:#FFFFFF}
+            div#fancybox-outer{background-color:#FFFFFF}
+            </style>
+        
+        
+        <!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.2.5 - http://yoast.com/wordpress/seo/ -->
+        <meta name="description" content="Consultoría de desarrollo de software. Desarrollos de web en HTML5, Java EE, Django. Soluciones móviles en Android, Blackberry, iOS y Windows Mobile"/>
+        <link rel="canonical" href="http://www.visual-engin.com/Web/" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Visual Engineering - Software Development" />
+        <meta property="og:description" content="Consultoría de desarrollo de software. Desarrollos de web en HTML5, Java EE, Django. Soluciones móviles en Android, Blackberry, iOS y Windows Mobile" />
+        <meta property="og:url" content="http://www.visual-engin.com/Web/" />
+        <meta property="og:site_name" content="Visual Engineering" />
+        <meta name="google-site-verification" content="QR9PXFZunYc4aXxglui4ao6nPvukBQqzKGbonf30PKI" />
+        <!-- / Yoast WordPress SEO plugin. -->
+        
+        <link rel="alternate" type="application/rss+xml" title="Visual Engineering &raquo; Index RSS de los comentarios" href="http://www.visual-engin.com/Web/index/feed/" />
+        <link rel="stylesheet" id="contact-form-7-css"  href="http://www.visual-engin.com/Web/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.4.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="fancybox-css"  href="http://www.visual-engin.com/Web/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=3.5.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="screen-css"  href="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/style.css?ver=3.5.2" type="text/css" media="screen" />
+        <script type="text/javascript" src="http://www.visual-engin.com/Web/wp-includes/js/jquery/jquery.js?ver=1.8.3"></script>
+        <script type="text/javascript" src="http://www.visual-engin.com/Web/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.4"></script>
+        <script type="text/javascript" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/js/site.js?ver=3.5.2"></script>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.visual-engin.com/Web/xmlrpc.php?rsd" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.visual-engin.com/Web/wp-includes/wlwmanifest.xml" />
+        <meta name="generator" content="WordPress 3.5.2" />
+        
+        <!-- Fancybox for WordPress v3.0.2 -->
+        <script type="text/javascript">
+            jQuery(function(){
+                   
+                   jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+                   var arr = jQuery("a.fancybox");
+                   jQuery.each(arr, function() {
+                               var title = jQuery(this).children("img").attr("title");
+                               jQuery(this).attr("title",title);
+                               })
+                   }
+                   
+                   // Supported file extensions
+                   var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr("href")) });
+                   
+                   thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+                   jQuery("a.fancybox").fancybox({
+                                                 "cyclic": false,
+                                                 "autoScale": true,
+                                                 "padding": 10,
+                                                 "opacity": true,
+                                                 "speedIn": 500,
+                                                 "speedOut": 500,
+                                                 "changeSpeed": 300,
+                                                 "overlayShow": true,
+                                                 "overlayOpacity": "0.4",
+                                                 "overlayColor": "#666666",
+                                                 "titleShow": true,
+                                                 "titlePosition": "float",
+                                                 "enableEscapeButton": true,
+                                                 "showCloseButton": true,
+                                                 "showNavArrows": true,
+                                                 "hideOnOverlayClick": true,
+                                                 "hideOnContentClick": false,
+                                                 "width": 560,
+                                                 "height": 340,
+                                                 "transitionIn": "fade",
+                                                 "transitionOut": "fade",
+                                                 "centerOnScroll": true
+                                                 });
+                   
+                   
+                   })
+            </script>
+        <!-- END Fancybox for WordPress -->
+        
+        <meta http-equiv="Content-Language" content="es-ES" />
+        <style type="text/css" media="screen">
+            .qtrans_flag span { display:none }
+            .qtrans_flag { height:12px; width:18px; display:block }
+            .qtrans_flag_and_text { padding-left:20px }
+            .qtrans_flag_es { background:url(http://www.visual-engin.com/Web/wp-content/plugins/qtranslate/flags/es.png) no-repeat }
+            .qtrans_flag_en { background:url(http://www.visual-engin.com/Web/wp-content/plugins/qtranslate/flags/gb.png) no-repeat }
+            </style>
+        <link hreflang="en" href="http://www.visual-engin.com/Web/en/" rel="alternate" />
+        <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+        
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+             
+             ga("create", "UA-45536074-1", "visual-engin.com");
+             ga("send", "pageview");
+             
+            </script>
+        
+        
+    </head>
+    <body class="home page page-id-432 page-template page-template-main-php index">
+        
+        
+        <!-- MENU PRINCIPAL -->
+        
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid contenido">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-list icon-white"></i>                      Menú
+                    </a>
+                    <a class="brand" href="http://www.visual-engin.com/Web/"><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/logo1.png" alt="Visual Engineered" /></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            
+                            <!--<li class="hid"><ul class="trabaja"><ul class="qtrans_language_chooser" id="qtranslate-chooser"><li class="lang-es active"><a href="http://www.visual-engin.com/Web/" hreflang="es" title="Español"><span>Español</span></a></li><li class="lang-en"><a href="http://www.visual-engin.com/Web/en/" hreflang="en" title="English"><span>English</span></a></li></ul><div class="qtrans_widget_end"></div></ul></li>-->
+                            
+                            <!--<li class="active"><a href="http://www.visual-engin.com/Web">INICIO</a></li>
+                             <li class="sepa"><p>/</p></li>-->
+                            <!--<li class="casa"><a class="topmarg" href="http://www.visual-engin.com/Web/"><i class="iconmarg icon-home icon-white"></i></a></li>-->
+                            <li><a href="http://www.visual-engin.com/Web/nosotros/">                         NOSOTROS
+                            </a></li>
+                            <li class="sepa"><p>/</p></li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">                          SOLUCIONES
+                                    <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://www.visual-engin.com/Web/videocollaboration/">Mobile video collaboration</a></li>
+                                    <li><a href="http://www.visual-engin.com/Web/imms/">Servidor de movilidad</a></li>
+                                </ul>
+                            </li>
+                            <li class="sepa"><p>/</p></li>
+                            <!--<li><a href="http://www.visual-engin.com/Web/imasd/">I + D</a></li>
+                             <li class="sepa"><p>/</p></li>-->
+                            <li><a href="http://www.visual-engin.com/Web/clientes/">                        CLIENTES
+                            </a></li>
+                            <li class="sepa"><p>/</p></li>
+                            <li><a href="http://www.visual-engin.com/Web/contacto/">                        CONTACTO
+                            </a></li>
+                            
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!-- /MENU PRINCIPAL -->
+        
+        <!-- MENU SECUNDARI -->
+        <div class="dossubmenu">
+            <div class="contenido">
+                <div class="izq">
+                    <p class="blanco pad10"><a href="https://twitter.com/visualengin" target="_blank"><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/twitter.png" alt="twitter" /></a><a href="https://twitter.com/visualengin" target="_blank">RT @tic: RT  @MWC_Barcelona: An app that continuously monitors the progression of hearth disease as well as risk of mortality http://t.co/P…</a></p>
+                </div>
+                <!--<div class="dere">
+                 
+                 <ul class="trabaja">
+                 
+                 <ul class="qtrans_language_chooser" id="qtranslate-chooser"><li class="lang-es active"><a href="http://www.visual-engin.com/Web/" hreflang="es" title="Español"><span>Español</span></a></li><li class="lang-en"><a href="http://www.visual-engin.com/Web/en/" hreflang="en" title="English"><span>English</span></a></li></ul><div class="qtrans_widget_end"></div>  	 </ul>
+                 </div>  -->
+            </div>
+        </div>
+        <!-- /MENU SECUNDARI -->
+        
+        
+        <header>
+            
+            
+            <div class="row-fluid">
+                
+                <!-- Carousel
+                 ================================================== -->
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div id="back1" class="item active" data-type="background" data-speed="6">
+                            <!--<div class="losmov"></div> -->
+                            <div class="contenido">
+                                <div class="carousel-caption carousel-caption3" data-speed="6">
+                                    <h1>	          	                 Soluciones móviles optimizadas para cada negocio
+                                    </h1>
+                                    <p class="textito">	          					¿Necesita una solución móvil para iOS, Android, Blackberry o Window Mobile? ¿O mejor una aplicación web mobile para todas las plataformas? Visual asesora y ofrece la solución que mejor se adapte a las necesidades de cada cliente.
+                                    </p>
+                                    
+                                    <!--   <div class="clear20"></div>
+                                     <p><a class="btnt" href="http://www.visual-engin.com/Web/soluciones">+ Soluciones &raquo;</a></p>
+                                     -->
+                                    <!--<a class="btn btn-large btn-primary" href="#">	    Browse gallery español
+                                     </a>-->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="back2" class="item" data-type="background" data-speed="6" >
+                            <div class="losmap" data-type="background" data-speed="5"></div>
+                            <div class="contenido kolt">
+                                
+                                <div class="carousel-caption carousel-caption3">
+                                    
+                                    <h1>	                 Una visión hecha empresa
+                                    </h1>
+                                    <p class="textito">	             	Visual Engineering está formada por un grupo de ingenieros que provee un completo rango de soluciones basadas en movilidad para todo tipo de negocio, empleando un amplio rango de tecnologías. Nuestro objetivo principal es facilitar el trabajo de nuestros clientes con nuestras soluciones a medida.
+                                    </p>
+                                    
+                                    <div class="clear20"></div>
+                                    <p><a class="btnt" href="http://www.visual-engin.com/Web/contacto">Contacto &raquo;</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="back3" class="item" data-type="background" data-speed="6" >
+                            
+                            <div class="contenido kol">
+                                <div class="carousel-caption2">
+                                    
+                                    <h1>	           Calidad y experiencia
+                                    </h1>
+                                    <p class="textito">	       Visual provee soluciones altamente de calidad,  ayudando al crecimiento de tu negocio. Soluciones flexibles, escalables, seguras y personalizadas hacen que nuestro trabajo sea atractivo y de continua demanda . 	             </p>
+                                    
+                                    <div class="clear20"></div>
+                                    <p><a class="btnt" href="http://www.visual-engin.com/Web/nosotros">Conócenos &raquo;</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    
+                </div><!-- /.carousel -->
+                
+            </div>
+        </header>
+        
+        <div class="contenido">
+            <div class="row-fluid">
+                
+                <div class="seccion1">
+                    
+                    <div class="clear70"></div>
+                    <div class="jumbotron">
+                        <h1>One step beyond
+                        </h1>
+                        <p>Somos una empresa de visión internacional, con un equipo joven de ingenieros en el área de las telecomunicaciones enfocados en la consultoría e I+D+i para tecnología en movilidad.</p>
+                    </div>
+                    <div class="clear50"></div><div class="clear20"></div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="contenido">
+            
+            
+            <div class="row-fluid">
+                <div class="span4 cent">
+                    <div class="imgi">
+                        <img class="imgi" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/una.png">
+                            </div>
+                    <h4>           Servicios que ofrecemos<br/><br/>
+                    </h4>
+                    <p>          Desarrollo de APP<br/><span class="maspe">&#9733;</span><br/>
+                    Desarrollo Web<br/><span class="maspe">&#9733;</span><br/>
+                    Asesoramiento Profesional<br/>
+                    
+                    </p>
+                </div><!-- /.span4 -->
+                
+                
+                
+                <div class="span4 cent">
+                    <div class="imgi">
+                        <img class="imgi" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/dos.png">
+                            </div>
+                    <h4>           ¿Por qué Visual Engin?<br/><br/>
+                    </h4>
+                    <p>
+                    Una década de experiencia en movilidad<br/><span class="maspe">&#9733;</span><br/>
+                    Proximidad y transparencia con nuestros clientes<br/><span class="maspe">&#9733;</span><br/>
+                    Innovación tecnológica constante</p><br/>
+                    
+                </div><!-- /.span4 -->
+                
+                
+                
+                <div class="span4 nocent">
+                    <div class="imgi">
+                        <img class="imgi" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/tres.png">
+                            </div>
+                    <h4>           Experiencia en Tecnologías<br/><br/>
+                    </h4>
+                    <p>Desarrollos nativos en iOS, Android, BlackBerry y Windows<br/><span class="maspe">&#9733;</span><br/>
+                    Desarrollos web en HTML5, CSS3, PHP, Django, etc.<br/><span class="maspe">&#9733;</span><br/>
+                    Java, C++, C#, SQL Server, MySQL, ORACLE, etc.</p>
+                    
+                </div><!-- /.span4 -->
+                
+                
+                
+                <div class="clear70"></div>
+                
+                
+            </div>
+            
+            
+            
+        </div>
+        <!-- /.CONTENIDO -->   <div class="clear50"></div>
+        
+        
+        <div class="seccio2" id="about" data-type="background" data-speed="6" >
+            
+            <div class="contenido">
+                
+                <div class="clear20"></div>    <div class="clear20"></div>
+                
+                
+                <div class="row-fluid">
+                    
+                    <div class="span4">
+                        <h4 class="blbl">Clientes</h4>
+                        <h2 class="titufi blbl">El trabajar para cada uno de nuestros clientes es nuestra mayor satisfacción.</h2>
+                        <div class="clear20"></div>
+                        <p class="ssddss"><a class="btnt" href="http://www.visual-engin.com/Web/clientes/">+ Clientes &raquo;</a></p>
+                    </div>
+                    
+                    <div class="span8">
+                        <ul class="lineabajo">
+                            <li><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/ferrovial.png" alt="Ferrovial" /></li>
+                            <li><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/massimo.png" alt="Securitas" /></li>
+                            <li><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/cliniclogo.png" alt="Clínic" /></li>
+                            <li><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/microsoft.png" alt="Microsoft" /></li>
+                            <li><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/securitas.png" alt="Massimo Dutti" /></li>
+                            <li><img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/gasnatural.png" alt="gasnatural" /></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="clear20"></div>    <div class="clear20"></div>
+                
+            </div>  <!-- /.CONTENIDO -->
+        </div>  <!-- /.SECCIO2 -->
+        
+        
+        
+        <footer>
+            <div class="elfooter">
+                <div class="contenido">
+                    
+                    <div class="clear40"></div>
+                    
+                    <div class="row-fluid">
+                        
+                        
+                        
+                        <div class="span4 fonsbl">
+                            <div class="clear20"></div>
+                            
+                            <img src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/logo.png" alt="Visual Engineering" />
+                            
+                            <div class="clear20"></div>
+                            <p class="blanco"><i class="iconmarg icon-question-sign icon-white"></i><a href="tel:+34932157735">+34 93 215 77 35</a>
+                            <span class="w10"></span>
+                            <a href="mailto:info@visual-engin.com"><i class="iconmarg icon-envelope icon-white"></i>info@visual-engin.com</a>
+                            <span class="w10"></span></p>
+                            <p class="blanco">
+                            <i class="iconmarg icon-map-marker icon-white"></i><a href="https://maps.google.es/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=passeig+de+gracia+67&amp;aq=&amp;sll=41.692152,1.746005&amp;sspn=2.469259,4.921875&amp;ie=UTF8&amp;hq=&amp;hnear=Passeig+de+Gr%C3%A0cia,+67,+08007+Barcelona,+Catalunya&amp;t=m&amp;ll=41.392844,2.163877&amp;spn=0.022536,0.057507&amp;z=15&amp;iwloc=A" target="_blank">Passeig de Gràcia 67, 1º 2º. 08008. Barcelona, España.</a></p>
+                            
+                            
+                            
+                            <h3 class="pol">		    	<h4 class="lkoi">Síguenos</h4>
+                            </h3>
+                            
+                            <p class="blanco"><a href="https://twitter.com/visualengin" target="_blank"><img height="30" width="30" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/twitter2.png"/><a href="https://www.facebook.com/visualengin" target="_blank"><img height="30" width="30" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/facebook.png"/><a href="http://www.linkedin.com/company/visual-engineering" target="_blank"><img height="30" width="30" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/in2.png"/></a>
+                                <a href="https://plus.google.com/+VisualenginTechnology" target="_blank"><img height="30" width="30" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/googleplus.png"/></a>
+                                <a href="http://www.visual-engin.com/blog" target="_blank"><img height="30" width="30" src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/img/blogima.png"/></a>
+                                </p>
+                                </div>
+                        
+                        
+                        <div class="span8 ki">
+                            
+                            <div class="span4" >
+                                <a href="http://www.visual-engin.com/Web/nosotros/"><h3 class="pol">				  <h4>Nosotros</h4>
+                                </h3></a>
+                                <ul class="nomar2">
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/nosotros/#presentacion">				    Presentación
+                                    </a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/nosotros/#valores">				    Valores
+                                    </a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/nosotros/#equipo">				    Equipo
+                                    </a></li>
+                                    
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/nosotros/#trabaja-con-nosotros">				    Trabaja con nosotros
+                                    </a></li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <div class="span4">
+                                <h3 class="pol">				    <h4>Soluciones</h4>
+                                </h3>
+                                <ul class="nomar2">
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/videocollaboration/">Mobile video collaboration</a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/imms/">Servidor de movilidad</a></li>
+                                    
+                                    <!--	<li><a href="http://www.visual-engin.com/Web/imasd/"><h4>I+D</h4></a></li>-->
+                                    <!--				<li class="nolineheight"><a href="http://www.visual-engin.com/Web/imasd/#mobb">Mobbio</a></li>
+                                     <li class="nolineheight"><a href="http://www.visual-engin.com/Web/imasd/">Share and Buy</a></li>
+                                     <li class="nolineheight"><a href="http://www.visual-engin.com/Web/imasd/#mobb">Virtual Asistant</a></li>-->
+                                </ul>
+                            </div>
+                            
+                            <div class="span4">
+                                <a href="http://www.visual-engin.com/Web/clientes"><h4>Clientes</h4></a>
+                                <ul class="nomar2">
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/clientes/">Grupo Inditex</a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/clientes/">Clínic Barcelona</a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/clientes/">Securitas Direct</a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/clientes/">					    Ferrovial Servicios
+                                    </a></li>
+                                    <li class="nolineheight"><a href="http://www.visual-engin.com/Web/clientes/">Gas Natural</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="clear50"></div>
+                            
+                            
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="clear40"></div>
+                    
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+        <script type="text/javascript" src="http://www.visual-engin.com/Web/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.36.0-2013.06.16"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var _wpcf7 = {"loaderUrl":"http:\/\/www.visual-engin.com\/Web\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Enviando..."};
+            /* ]]> */
+            </script>
+        <script type="text/javascript" src="http://www.visual-engin.com/Web/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.4.2"></script>
+        
+        
+        <!-- Le javascript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-transition.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-alert.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-modal.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-dropdown.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-scrollspy.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-tab.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-tooltip.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-popover.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-button.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-collapse.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-carousel.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-typeahead.js"></script>
+        <script src="http://www.visual-engin.com/Web/wp-content/themes/starkers-master/assets/js/bootstrap-affix.js"></script>
+        <script>
+            !function ($) {
+                $(function(){
+                  // carousel demo
+                  $("#myCarousel").carousel()
+                  })
+            }(window.jQuery)
+        </script>
+    </body>
+</html>

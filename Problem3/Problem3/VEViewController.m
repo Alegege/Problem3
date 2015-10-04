@@ -2,7 +2,7 @@
 //  VEViewController.m
 //  Problem3
 //
-//  Created by Alejandro Garcia on 1/10/15.
+//  Created by Alejandro Garcia on 3/10/15.
 //  Copyright © 2015 Alejandro Garcia. All rights reserved.
 //
 
@@ -14,6 +14,13 @@
 @end
 
 @implementation VEViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self addDismissKeyboardGesture];
+}
 
 #pragma mark - Loading HUD
 
@@ -52,6 +59,19 @@
 - (UIView *)viewForAttachingLoadingHUD
 {
     return self.view;
+}
+
+- (void)addDismissKeyboardGesture
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(endEditing)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)endEditing
+{
+    [self.view endEditing:YES];
 }
 
 @end

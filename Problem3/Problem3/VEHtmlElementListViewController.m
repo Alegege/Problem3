@@ -2,22 +2,25 @@
 //  VEHtmlElementListViewController.m
 //  Problem3
 //
-//  Created by Alejandro Garcia on 1/10/15.
+//  Created by Alejandro Garcia on 3/10/15.
 //  Copyright © 2015 Alejandro Garcia. All rights reserved.
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "VEHtmlElementListViewController.h"
+#import "VEHtmlElementListBaseDelegate.h"
+#import "VEHtmlElementListBaseDataSource.h"
+#import "VEHtmlElementViewModel.h"
 
-@interface VEHtmlElementListViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface VEHtmlElementListViewController ()
 
-@property (nonatomic, strong) NSURL *url;
-
-@property (nonatomic, assign) VEHtmlElementType htmlElementType;
+@property (nonatomic, strong) VEHtmlElementViewModel *viewModel;
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, copy) NSArray *elements;
+@property (nonatomic, strong) VEHtmlElementListBaseDataSource *dataSource;
+
+@property (nonatomic, strong) VEHtmlElementListBaseDelegate *delegate;
 
 @end
 
@@ -28,8 +31,9 @@
     self = [super init];
     
     if (self) {
-        _url = url;
-        _htmlElementType = htmlElementType;
+        _viewModel = [[VEHtmlElementViewModel alloc] initWithUrl:url htmlElementType:htmlElementType];
+        _delegate = [_viewModel delegate];
+        _dataSource = [_viewModel dataSource];
     }
     
     return self;
@@ -40,54 +44,61 @@
     
     [self setupTableView];
     
-    [self loadElements];
+    [self setupSignals];
+    
+    [self loadWebsite];
 }
 
 - (void)setupTableView
 {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
-    tableView.estimatedRowHeight = 100;
-    tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
-    [self.view addSubview:tableView];
-    self.tableView = tableView;
+    [self.view addSubview:self.tableView];
     
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    
+    [self.delegate setupDelegate:self.tableView];
+    [self.dataSource setupDataSource:self.tableView];
+}
+
+- (void)setupSignals
+{
     @weakify(self)
-    [RACObserve(self, elements) subscribeNext:^(id x) {
-        [tableView reloadData];
-        
-        [self_weak_ hideLoadingHUD];
+    [RACObserve(self.viewModel, elements) subscribeNext:^(id x) {
+        if (self_weak_.viewModel.elements.count) {
+            [self_weak_.tableView reloadData];
+            
+            [self_weak_ hideLoadingHUD];
+        } else if (self_weak_.viewModel.elements) {
+            [self_weak_ hideLoadingHUD];
+            
+            [self_weak_ showNoInfoToDisplayAlert];
+        }
     }];
 }
 
-- (void)loadElements
+- (void)loadWebsite
 {
+    [self showLoadingHUD];
     
+    [self.viewModel loadWebsite];
 }
 
-#pragma mark - UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void)showNoInfoToDisplayAlert
 {
-    return self.elements.count;
+    @weakify(self)
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Information",nil)
+                                                                   message:NSLocalizedString(@"There is no info to display (check if the provided URL exists)",nil)
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Accept",nil)
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              [self_weak_.navigationController popViewControllerAnimated:YES];
+                                                          }];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return nil;
-}
-
-#pragma mark - UITableViewDelegate
-
-
 
 @end

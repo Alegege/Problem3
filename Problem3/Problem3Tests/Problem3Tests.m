@@ -2,38 +2,39 @@
 //  Problem3Tests.m
 //  Problem3Tests
 //
-//  Created by Alejandro Garcia on 1/10/15.
+//  Created by Alejandro Garcia on 3/10/15.
 //  Copyright © 2015 Alejandro Garcia. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <Kiwi/Kiwi.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "VEHtmlElementViewModel.h"
 
-@interface Problem3Tests : XCTestCase
+SPEC_BEGIN(Problem3Tests)
 
-@end
+describe(@"VEHtmlElementViewModel", ^{
+    
+    context(@"parsing html elements", ^{
+        
+        NSURL *htmlUrl = [[NSBundle bundleForClass:self.class] URLForResource:@"visual-engine" withExtension:@"html"];
+        
+        it(@"parses 36 a[href] elements", ^{
+            VEHtmlElementViewModel *viewModel = [[VEHtmlElementViewModel alloc] initWithUrl:htmlUrl
+                                                                            htmlElementType:HtmlElementTypeAHref];
+            [viewModel loadWebsite];
+            
+            [[expectFutureValue(viewModel.elements) shouldEventually] haveCountOf:36];
+        });
+        
+        it(@"parses 17 img elements", ^{
+            VEHtmlElementViewModel *viewModel = [[VEHtmlElementViewModel alloc] initWithUrl:htmlUrl
+                                                                            htmlElementType:HtmlElementTypeImgSrc];
+            
+            [viewModel loadWebsite];
+            
+            [[expectFutureValue(viewModel.elements) shouldEventually] haveCountOf:17];
+        });
+    });
+});
 
-@implementation Problem3Tests
-
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
-@end
+SPEC_END
