@@ -7,6 +7,7 @@
 //
 
 #import "VEHtmlElementImgListDelegate.h"
+#import "VEHtmlElementImgCell.h"
 
 @interface VEHtmlElementImgListDelegate () <UITableViewDelegate>
 
@@ -17,6 +18,13 @@
 - (void)setupDelegate:(UITableView *)tableView
 {
     tableView.delegate = self;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [VEHtmlElementImgCell preferredHeight];
 }
 
 @end

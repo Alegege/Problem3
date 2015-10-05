@@ -13,4 +13,6 @@
 
 - (void)setupCellWithHtmlElementImg:(VEHtmlElementImgSrc *)htmlElementImg;
 
++ (CGFloat)preferredHeight;
+
 @end

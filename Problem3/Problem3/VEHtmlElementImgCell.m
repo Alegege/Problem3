@@ -9,6 +9,8 @@
 #import "UIImageView+AFNetworking.h"
 #import "VEHtmlElementImgCell.h"
 
+static VEHtmlElementImgCell *modelCell;
+
 @interface VEHtmlElementImgCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *htmlImage;
@@ -25,6 +27,15 @@
     [self.htmlImage setImageWithURL:url];
     
     self.src.text = htmlElementImg.src;
+}
+
++ (CGFloat)preferredHeight
+{
+    if (!modelCell) {
+        modelCell = [[NSBundle mainBundle] loadNibNamed:@"VEHtmlElementImgCell" owner:self options:nil][0];
+    }
+    
+    return modelCell.frame.size.height;
 }
 
 @end
